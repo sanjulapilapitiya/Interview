@@ -1,4 +1,14 @@
 <?php
+/*
+ * The following script is running extremely slow in a production environment.
+ * Task:
+ * * Identify the performance issues and rewrite the function to optimize database queries.
+ * * Apply best practices while maintaining legacy compatibility.
+ *
+ * Hints:
+ * * Overall there are three issue to fix
+ * * Are there any patterns that might be suitable?
+ */
 
 function getUsers() {
     $db = new PDO("mysql:host=localhost;dbname=shop", "root", "");

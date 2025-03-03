@@ -1,5 +1,19 @@
 <?php
 
+/*
+ * Below is a piece of legacy PHP code that processes an order.
+ * It has several issues, including poor readability, lack of error handling, and mixed concerns.
+ * Use comments to explain your thinking or as pseudo-code if you're short on time.
+ * Task:
+ *  * Refactor the code to improve readability and maintainability.
+ *  * Apply the Single Responsibility Principle (SRP).
+ *  * Add proper error handling.
+ *  * Ensure the refactored code is unit tested.
+ * Hints:
+ * * Could this function be a set of classes instead perhaps?
+ * * Is there a better way to handle errors than die()?
+ * * How could it be refactored to improve security?
+ */
 function processOrder($orderData) {
     $db = new mysqli("localhost", "root", "", "shop");
     if ($db->connect_error) {
