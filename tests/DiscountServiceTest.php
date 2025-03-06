@@ -7,6 +7,7 @@ use PHPUnit\Framework\TestCase;
 
 // if autoload is not configured uncomment below line to get test working
 // require_once __DIR__ . '/../src/DiscountService.php';
+// update! this is now fixed turned out there was a mismatch in the versions local and global unittest causing those warnings
 
 class DiscountServiceTest extends TestCase
 {

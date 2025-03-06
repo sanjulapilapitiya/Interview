@@ -1,6 +1,6 @@
 <?php
 
-namespace Equinox\DeveloperInterview;;
+namespace Equinox\DeveloperInterview;
 /*
  * You have the following function that calculates discounts.
  * Task:
