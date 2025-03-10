@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Equinox\DeveloperInterview;
 /*
  * You have the following function that calculates discounts.
@@ -12,7 +14,7 @@ namespace Equinox\DeveloperInterview;
  */
 
  class DiscountService {
-    function applyDiscount($price, $discountCode) {
+    function applyDiscount(float $price, string $discountCode): string {
         $discounts = [
             'SUMMER10' => 10,
             'WINTER20' => 20,
