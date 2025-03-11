@@ -36,7 +36,8 @@ class DiscountServiceTest extends TestCase
             "user using discount code WINTER20 with odd price tag" => [67, 'WINTER20', 53.60],
             "user using invalid code" => [100, 'INVALID', 100.00],
             "user using discount code EDGECASE100 code" => [100, 'EDGECASE100', 0.00],
-            "user using discount code EDGECASE0 code" => [100, 'EDGECASE0', 100.00]
+            "user using discount code EDGECASE0 code" => [100, 'EDGECASE0', 100.00],
+            "user using discount code EDGECASENEGATIVE code" => [100, 'EDGECASENEGATIVE', 100.00]
         ];
     }
 

@@ -20,7 +20,7 @@ namespace Equinox\DeveloperInterview;
             'WINTER20' => 20,
             'EDGECASE0' => 0,
             'EDGECASE100' => 100,
-            'EDGECASENEGATIVE' => -10,
+            'EDGECASENEGATIVE' => -10, //discount exists to test negative discount is not applied
         ];
         return isset($discounts[$discountCode]) && ($discounts[$discountCode] > 0) ? number_format($price - ($price * $discounts[$discountCode] / 100), 2) : number_format($price,2);
     }
